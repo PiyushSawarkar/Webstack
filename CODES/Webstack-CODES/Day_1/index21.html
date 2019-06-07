@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+	</head>
+	<body>
+		<form>
+			<hr>
+			<input name="firstname" type="text">
+			<!-- This allows to take input from user in string format-->
+			<br>
+			<hr>
+			<br>
+			<select name="cars">
+			<!-- Drop Down-->
+				<option value="volvo">volvo</option>
+				<option value="saab">saab</option>
+				<option value="fiat">fiat</option>
+				<option value="audi">audi</option>
+			</select>
+			<br>
+			<hr>
+			<br>
+			<select name="cars" multiple>
+				<option value="volvo">volvo</option>
+				<option value="saab">saab</option>
+				<option value="fiat">fiat</option>
+				<option value="audi">audi</option>
+			</select>
+			<br>
+			<hr>
+			<br>
+			<textarea name="message" rows="10" cols="30">dummytext
+			</textarea>	
+			<br>
+			<hr>
+			<br>
+			GENDER:<br>
+			<input name="RadioButton-Gender" type="radio" value="M">Male</input><br>
+			<input name="RadioButton-Gender" type="radio" value="F">Female</input><br>
+			<input name="RadioButton-Gender" type="radio" value="NA">Rather Not Say It</input><br>	
+			<hr>
+			<br>
+			<input name="CheckBox-Subjects" type="checkbox" value="a">A</input>
+			<input name="CheckBox-Subjects" type="checkbox" value="b">B</input>
+			<input name="CheckBox-Subjects" type="checkbox" value="c">C</input>	
+			<hr>
+			<br>
+			<button name="button"  onclick="alert('Hello World')">Click Me!!!</button>
+			<hr>
+			<br>
+			<input list="browsers" name="browser">
+			<datalist id="browsers">
+				<option value="Internet Explorer">
+				<option value="Google Chrome">
+				<option value="Edge">
+				<option value="Opera">
+				<option value="Mozilla Firefox">
+				<option value="safari">
+			</datalist>
+			</input>
+			<br><br>
+			<hr>
+		</form>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+<!-- Usage of Form tag -->
+

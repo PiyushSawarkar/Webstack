@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+	</head>
+	<body>
+		<h2 align=center>Student Registration Form</h2>
+		<hr>
+		<br>
+		<table border="1" cellspacing="0" cellpadding="0" width="390" height="300" align=center>
+			<tr>
+				<th align=center>Attributes</th>
+				<th align=center>Input</th> 
+			</tr>
+			<tr>
+				<td align=center>Name</td>
+				<td align=center><input name="name" type="text"></input></td>
+			</tr>
+			<tr>
+				<td align=center>Roll Number</td>
+				<td align=center><input name="RollNumber" type="text"></input></td>
+			</tr>
+			<tr>
+				<td align=center>Year Of Engg.</td>
+				<td align=center><input list="browsers" name="browser">
+			<datalist id="browsers">
+				<option value="FE">
+				<option value="SE">
+				<option value="TE">
+				<option value="BE">
+			</datalist>
+			</input></td>
+			</tr>
+			<tr>
+				<td align=center>Gender</td>
+				<td align=center>
+					<input name="RadioButton-Gender" type="radio" value="M">Male</input>
+					<input name="RadioButton-Gender" type="radio" value="F">Female</input>
+				</td>	
+			</tr>
+			<tr>
+				<td align=center>Age</td>
+				<td align=center><input name="firstname" type="text"></input></td>
+			</tr>
+			<tr>
+				<td align=center>Subjects to select</td>
+				<td align=center>
+					<input name="CheckBox-Subjects" type="checkbox" value="a">Maths</input>
+			<input name="CheckBox-Subjects" type="checkbox" value="b">Physics</input>
+			<input name="CheckBox-Subjects" type="checkbox" value="c">Chemistry</input>	
+				</td>
+			</tr>
+			<tr>
+				<td align=center colspan="2">
+					<button  align=center name="button"  onclick="alert('Form Submitted')">submit</button>
+				</td>
+			</tr>
+			
+		</table>
+		<br><hr>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+<!-- Usage of Form tag  -->
+
