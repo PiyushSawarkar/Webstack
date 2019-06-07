@@ -1,0 +1,181 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+net in Visual Studio
+C# is Programming language
+.net is framework
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.net=>{
+	contians CLR(Common Language runtime),
+	CLass library
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.net Architecture:
+
+	=======================================================================================
+	|	Class Library-{ADO.net, IO, Collections, Threading, Security, Many More}		  |
+	=======================================================================================
+	| CLR(Memory Management) | IL to native Converter | CTS (Common type system) )        | 
+	=======================================================================================
+	|									OS  											  |
+	=======================================================================================
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Note:
+-memory mangmt: Contains Garbage Collector;
+-IL: any lang prog(C#,VB.net,or any other) Compile time---> Intermediate Language ---> Native(Runtime Activity) => Just In Time
+-CTS: Different Mem mgmt handling...like int may have 2/4 byte...
+-ADO.net: For DB Connect
+-IO: -Collections: .....//Class lib's
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.net
+Namespace: Related Classes kept Together in a container...N1, N2, N3...
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+C# codes in  Visual Studio:
+// To create a new App: File -> newProject
+//visual C#->Console App(.net Framework)
+//Code window, Solution Explorer
+//to run: keyboard shortcut: ctrl+F5
+//cw tab-tab : auto-completion...
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Code1: Addition of Two Numbers
+using system;
+namespace addtwo{
+	class Program{ //Default Program
+		static void Main(string[] args){
+			int no1 = 7;
+			int no2 = 8;
+			int ans;
+			ans=no1+no2;
+			Console.WriteLine("Answer is "+ans);
+		}
+	}
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Code2: Addition of Two Numbers(With User Input) 
+using system;
+namespace addtwo{
+	class Program{ //Default Program
+		static void Main(string[] args){
+			Console.WriteLine("Please enter Number 1: ");
+			int no1 = int.Parse( Console.ReadLine() );
+			
+			Console.WriteLine("Please enter Number 2: ");
+			int no2 = int.Parse( Console.ReadLine() );;
+			
+			int ans;
+			ans=no1+no2;
+			Console.WriteLine("Answer is "+ans);
+		}
+	}
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Code3: Addition of Two Numbers(With User Input and Exception Handling) 
+using system;
+namespace addtwo{
+	class Program{ //Default Program
+		static void Main(string[] args){
+			try{
+				Console.WriteLine("Please enter Number 1: ");
+				int no1 = int.Parse( Console.ReadLine() );
+			
+				Console.WriteLine("Please enter Number 2: ");
+				int no2 = int.Parse( Console.ReadLine() );;
+			
+				int ans;
+				ans=no1+no2;
+				Console.WriteLine("Answer is "+ans);
+			}
+			catch(Exception ex){
+				Console.WriteLine(ex.Message);
+				throw;
+			}
+			
+		}
+	}
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Note Casing Notations:
+Camel Casing: firstName
+Pascal Casing: FirstName
+Hungarian notation: strFirstNumber
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Comments:
+Type1:
+ 	//
+OR
+Type2:
+	/*
+		...
+	*/
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Note: in a String append @ before a string .. or put double back slash ...for escaping sqeuence in folder path
+str=@"c:\sd\sdf" or "\\df\\"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Create a Web App:
+...content: has css files
+...scripts: has js, jQuery...
+extension is: " .aspx "
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Concept of Page specific tags..
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Web App: for adding 2 No's: Add just web form OR webForm with Master Page
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+To Add a Control:
+in here we have a design section: and just drag and drop....
+
+Conventions:
+txtNo
+btnAdd
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Validator Controls: added to page.
+Inside ToolBox:
+...Validators:ControlToValidate
+Also you need to ControlToValidate Property
+unless you do the above things you'll get YELLOW SCREEN OF DEATH...
+another validator to check datatype...
+Compare Validator: Add for Comparator
+-->all validators have to be also linked to which element you want validation
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+->To have Content from TextBox:
+int number=int.Parse(idOfTextBox.Text);//this is id assigned tp that element while html coding..
+->To set value of label:
+idOfLbl.Text=result.ToString();
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Either you go and add css;
+or also you may even go inside properties: To have any thing like...background color...etc
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Some btn should do validation and Some btn should'nt do it...
+So just go to Properties of that Btn...and make CausesValidation property: false
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended DB: SQL Database.(Microsoft Owned)
+SQL Management Studio ... Microsoft SQL Server 
+Just GUI Based DB software
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//To add data from WebApplication:
+Right Click on soln Expl...add new item...master page..
+
+DB:
+
+using System.data;
+using System.Data.SqlClient;
+
+/*
+	In order to DB connectivity:
+	Connection: (String)
+	Cmd: (Query,Connection String)
+*/
+
+//Boiler Plate Code:
+//this code to put inside onClick function...
+SqlConnection con = new SqlConnection("server=DESKtOPTksd-assa;uid=sa;pwd=ds;database=apsit"); // (server_name,u_id,pswd,database_name)
+string query = "insert into student values('"+txtLname.Text+"','"+txtFname+"')";
+con.open(); //To open the connection
+SqlCommand cmd = new SqlCommand(query, con);
+cmd.executeNonQuery();
+con.close(); //To close the connection 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Inorder to redirect user from one pg to another use:
+Response.Redirect("listStudent.aspx");
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//To edit the DB Record:
+use grid view only
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
