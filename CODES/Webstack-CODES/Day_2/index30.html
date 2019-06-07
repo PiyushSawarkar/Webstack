@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<style>
+			.img-container{
+				float:left;
+				width:30%;
+				padding:10px;
+			}
+			img{
+				opacity:0.5;
+				filter:alpha(opacity=50);/*For IE8 and earlier*/
+			}
+			img:hover{
+				opacity:1.0;
+				filter:alpha(opacity=100);/*For IE8 and earlier*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h2 align=center>This is a CONTENT</h2>
+		<p align=center>Description of this is Given Below</p>
+		<div>
+			
+			<div class="img-container">
+				<img src="ImageFolder/img.png" alt="a" style="width:100%" >
+			</div>
+			
+			<div class="img-container"><img src="ImageFolder/img2.png" alt="a" style="width:100%" >
+			</div>
+			
+			<div class="img-container"><img src="ImageFolder/img3.png" alt="a" style="width:100%"  >
+			</div>
+			
+		</div>
+		
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+
+
