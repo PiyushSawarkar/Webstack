@@ -1,0 +1,106 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<script language="javascript" type="text/javascript">
+			function clearfn(){
+				if(!confirm("Are you sure, you want to clear data ?")){
+					return; //return to the state as it was
+				}
+				else{
+					//refresh the data
+					document.getElementById("n1").value="";
+					document.getElementById("n2").value="";
+					document.getElementById("n3").value="";
+					document.getElementById("ans").value="";
+				}
+			}
+			function compare(){
+				var a,b,c;
+				a=Number(document.getElementById("n1").value);
+				
+				b=Number(document.getElementById("n2").value);
+				c=Number(document.getElementById("n3").value);
+				//NaN: Not a number
+				if(isNaN(document.getElementById("n1").value)){
+					alert(document.getElementById("n1").value+" is not a number");
+				}
+				if(isNaN(document.getElementById("n2").value)){
+					alert(document.getElementById("n2").value+" is not a number");
+				}
+				if(isNaN(document.getElementById("n3").value)){
+					alert(document.getElementById("n3").value+" is not a number");
+				}
+				if(a==b && b==c && a==c){
+					alert("All Values are Equal !!");
+				}
+				if(a>=b && a>=c){
+					document.getElementById("ans").value=a;
+				}
+				if(b>=a && b>=c){
+					document.getElementById("ans").value=b;
+				}
+				if(c>=a && c>=b){
+					document.getElementById("ans").value=c;
+				}
+				
+			}
+		</script>
+		
+	</head>
+	<body>
+		
+			<h2 align=center>Comparator</h2>
+			<hr>
+			<br>
+			
+			<table border="0" cellspacing="0" cellpadding="0" width="390" height="300" align=center>
+				<tr>
+					<th align=center>Attributes</th>
+					<th align=center>Input</th> 
+				</tr>
+				<tr>
+					<td align=center>Number 1</td>
+					<td align=center><input id="n1"  type="text"></input></td>
+				</tr>
+				<tr>
+					<td align=center>Number 2</td>
+					<td align=center><input id="n2"  type="text"></input></td>
+				</tr>
+				<tr>
+					<td align=center>Number 3</td>
+					<td align=center><input id="n3"  type="text"></input></td>
+				</tr>
+				<tr>
+					<td align=center >
+						<button  onClick="compare()">COMPARE</button>
+					</td>
+					<td align=center >
+						<button  onClick="clearfn()">CLEAR</button>
+					</td>
+				</tr>
+				<tr>
+					<td align=center>
+						Result 
+					</td>
+					<td align=center>
+						<input  type="text" id="ans">
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<hr/>
+			
+		
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+<!-- ProgramFlow: if...else,if..elseif..else,while,for,switch-->
+

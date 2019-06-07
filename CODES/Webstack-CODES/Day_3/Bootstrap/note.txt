@@ -1,0 +1,20 @@
+->Bootstrap is CSS framework
+Uses a Mobile-First Framework
+Responsive Design
+================================================================
+Bootstrap grid system:
+
+Bootstrap divided in 12 cols(sub blocks)...any screen
+lg => screen with resolution >= 1200  --large
+md => screen with resolution >= 992  --medium
+sm => screen with resolution >= 768  --small
+xs => screen with resolution < 768  --extra small
+
+//for having 2 cols:
+.col-md-6  | .col-md-6  ---> 2 divs ...
+////
+.col-md-6 .col-xs-12 -->>>such combinations can also be given
+like..to have 3 columns when web page rendered on a large screen and render 2 columns on a small screen.
+////
+...you can play with the combination of these .col's..
+================================================================

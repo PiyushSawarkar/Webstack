@@ -1,0 +1,1 @@
+Copied a jquerymin.js file in this folder form jQuery Folder

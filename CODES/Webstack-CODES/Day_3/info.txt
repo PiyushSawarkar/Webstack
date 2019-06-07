@@ -1,0 +1,5 @@
+<!-- Note: -->
+<!-- Head tag has meta information -->
+<!-- block takes full width of screen eg.: div -->
+<!-- JS: Scripting programming language -->
+<!-- JS: case-sensitive -->

@@ -1,0 +1,36 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+			
+	</head>
+	<body onload="myFunction()">
+		
+		<script>
+			function myFunction(){
+				var number;
+				while(1){
+					number=prompt('Enter a Number : ',"");
+					if(isNaN(number)){
+						continue;
+					}
+					else{
+						alert("You Entered = "+number);
+						break;	
+					}
+				}
+				document.write("Your Number is = "+number);
+			}
+		</script>
+		
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+

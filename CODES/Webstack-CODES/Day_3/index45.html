@@ -1,0 +1,34 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<script language="javascript" type="text/javascript">
+			function myFunction(){
+				var a=Math.max(5,10);
+				var b=Math.max(0,150,30,20,38);
+				var c=Math.max(-5,10);
+				var d=Math.max(-5,-10);
+				var e=Math.max(1.5,2.5);
+				var x=a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e+"<br>";
+				document.getElementById("ans").innerHTML=x;
+				
+			}
+		</script>
+		
+	</head>
+	<body>
+		<p id="ans">Answer appears here...just click below</p>
+		
+		<input type="button" onClick="myFunction()" value="get Result " ></input>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+<!-- ProgramFlow: if...else,if..elseif..else,while,for,switch-->
+

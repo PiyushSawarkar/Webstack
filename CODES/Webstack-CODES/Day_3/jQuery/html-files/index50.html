@@ -1,0 +1,46 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+<script type="text/javascript" src="../lib/jquerymin.js"></script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<script type="text/javascript" src="../lib/jquerymin.js"></script>
+		<script language="javascript" type="text/javascript">
+			$("document").ready(function(){
+				$(".hide-btn").click(function(){
+					$('p').hide();
+				});
+				$(".show-btn").click(function(){
+					$('p').show();
+				});	
+			});
+		</script>
+		
+	</head>
+	<body>
+		<button type="button" class="hide-btn">Hide Paragraph</button>
+		<button type="button" class="show-btn">Show Paragraph</button>
+		<p>This is a Paragraph 1.</p>
+		<p>This is a Paragraph 2.</p>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

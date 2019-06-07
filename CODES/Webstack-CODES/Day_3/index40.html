@@ -1,0 +1,58 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+	</head>
+	<body>
+		<button onClick="myFunction()">Today is: </button>	
+		<p id="ans"></p>
+		<script>
+			function myFunction(){
+				date=new Date();
+				var today=date.getDay();
+				//returns the day (0:sunday,1:monday,...and so on..)
+				var str;
+				switch(today){
+					case 0:
+						str="Sunday";
+						break;
+					case 1:
+						str="Monday";
+						break;
+					case 2:
+						str="Tueday";
+						break;
+					case 3:
+						str="Wednesday";
+						break;
+					case 4:
+						str="Thursday";
+						break;
+					case 5:
+						str="Friday";
+						break;
+					case 6:
+						str="Saturday";
+						break;
+					default:
+						str="Invalid";
+						break;
+				}
+				alert(str);
+				document.getElementById("ans").innerHTML=str;
+			}
+		</script>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+<!-- Use of Date-->
+<!-- new Date(): gives todays date-->
+
+

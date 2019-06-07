@@ -1,0 +1,25 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<script>
+			function newDoc(){
+				window.setTimeout(function(){location.href="index42.html";},1500);
+			}//1500 is in ms ; in seconds is 1.5 seconds
+		</script>
+	</head>
+	<body>	
+		<input type="button" onClick="newDoc()" value="Load new Document" />
+		
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+

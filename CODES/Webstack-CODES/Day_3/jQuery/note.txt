@@ -1,0 +1,21 @@
+->jQuery is JS library...it's a wrapper on JS...like nodejs,angularjs...
+->JS is done on CLIENT SIDE.
+-.jQuery is also done on client side....
+AJAX: Used to refresh certain elements.
+API: json or xml doc
+
+onload vs jQuerys's $(document).ready():
+=====================================================================
+->onload: fires after every thing on page is in memory >> JS
+->$(document).ready() >> jQuery: loads faster, as it's loading as soon as skeleton of the page is loaded
+=====================================================================
+
+
+
+
+
+
+
+
+
+

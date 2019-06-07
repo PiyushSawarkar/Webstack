@@ -1,0 +1,46 @@
+<!--Put script tag
+<script language="javascript" type="text/javascript">
+ javascript code
+</script>
+<script type="text/javascript" src="../lib/jquerymin.js"></script>
+-->
+
+
+
+<!DOCTYPE html> <!-- tells browser that this doc is written in html5 -->
+<html>
+	<head>
+		<title>title of page</title> <!-- Title is Not mandatory -->
+		<script type="text/javascript" src="../lib/jquerymin.js"></script>
+		<script language="javascript" type="text/javascript">
+			$("document").ready(function(){
+				$("#toggleContent").click(function(){
+					$('#h11').toggle("slow");
+				});	
+				$("#color").click(function(){
+					$("#h12").css("color","red");
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<button type="button" id="toggleContent">Toggle</button>
+		<button type="button" id="color">Change Color</button>
+		<h1 id="h11">Heading-1</h1>
+		<h1 id="h12">Heading-2</h1>
+	</body> <!-- Every thing written here would be visible on browser -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
